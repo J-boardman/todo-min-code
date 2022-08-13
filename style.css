@@ -1,0 +1,39 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+i {
+  cursor: pointer;
+  text-align: right;
+  font-size: 1.25rem;
+}
+
+article > form {
+  display: inline-block;
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+form, article, article > form {
+  display: grid;
+  grid-template-columns: minmax(100px, 200px) minmax(100px, 200px) 100px;
+}
+
+article > form {
+  grid-column: 1/4
+}
+
+input, button, span, div {
+  padding: 1rem;
+  text-align: center;
+}
+
+article {
+  border-bottom: 1px solid lightgray;  
+  width: fit-content;
+}

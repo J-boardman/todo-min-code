@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="/main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Todo App</title>
+  </head>
+  <body>
+    <!-- Add Todo Item -->
+    <form>
+      <input type="text" placeholder="Todo Item" required>
+      <input type="date">
+      <button>Add</button>
+    </form>
+
+    <!-- Render Results -->
+    <main></main>
+
+    <!-- Loop over to render each todo -->
+    <template>
+      <article>
+        <form class="hidden">
+          <input type="text" placeholder="Todo Item" required>
+          <input type="date">
+          <button>Edit</button>
+        </form>
+        <span data-title></span>
+        <span data-due-date></span>
+        <span>
+          <i data-edit-btn class="ri-edit-line"></i>
+          <i data-delete-btn class="ri-delete-bin-line"></i>
+        </span>
+      </article>
+    </template>
+  </body>
+</html>
